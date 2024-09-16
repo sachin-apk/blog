@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="outter-card">
+
+    <h1>Search Results for "{{ query }}"</h1>
+    <ul class="card">
+        {% for post in posts %}
+        <li class="lst card">
+            <a class="a-black" href="{% url "post_detail" post.pk %}">{{ post.title }}</a>
+        </li>
+        {% empty %}
+        <li>No result found.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

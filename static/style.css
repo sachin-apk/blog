@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CSS utilities  starts*/
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.outter-card {
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    height: 90vh;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    /* border-radius: 80xp; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 80xp;
+    padding: 20px;
+    width: auto;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS utilities ends */
+
+
+/* CSS base.html starts */
+
+.navbar {
+    width: 100vw;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.Lnav ul {
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Lnav span {
+    font-size: 35px;
+}
+
+.Rnav ul {
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.footer-container p {
+    margin: 0px;
+}
+
+.footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-container ul li {
+    margin: 0 10px;
+}
+
+
+/* CSS for base.html ends */
+
+
+/* CSs for post_list.html starts */
+
+#head1 {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.post {
+    width: 100%;
+    height: 100%;
+}
+
+.post ul li {
+    list-style-type: none;
+}
+
+.lst {
+    list-style-type: none;
+}
+
+.a-black {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.post ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+/* CSS for post_list.html ends */
+
+
+/* CSS for login form starts */
+
+.login-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container h1 {
+    position: relative;
+    top: -3rem;
+    font-size: 50px;
+}
+
+.login-container form {
+    width: 80%;
+    height: 60%;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    gap: 1px;
+}
+
+.login-container form input {
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+.login-container form label,
+input {
+    font-size: 20px;
+    /* font-style: italic; */
+}
+
+
+/* CSS for login form ends */

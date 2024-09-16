@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="Lnav">
+            <ul>
+                <span>MyBlogs</span>
+                <li><a href="{% url "post_list" %}">Post List</a></li>
+                <li><a href="{% url "post_new" %}">New Blog</a></li>
+            </ul>
+        </div>
+        <div class="Rnav">
+            <ul>
+                {% comment %} search form {% endcomment %}
+                <li>
+                    <form action="{% url "search" %}" method="get">
+                        <input type="search" name="q" placeholder="Search...">
+                        <input type="submit" name="search" value="Search">
+                    </form>
+                </li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url "logout" %}">Logout</a></li>
+                {% else %}
+                <li><a href="{% url "login" %}">Login</a></li>
+                {% endif %}
+                
+            </ul>
+        </div>
+    </nav>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <footer class="flex">
+        {% block footer %}
+            <div class="footer-container">
+                <p>&#169;2024. All rights reserved.</p> <br>
+                <ul>
+                    <li>Sachin Kumar</li>
+                    <li>Rishabh Raj Gautam</li>
+                    <li>Nagendra</li>
+                    <li>Naman Khuarana</li>
+                </ul>
+            </div>
+        {% endblock footer %} 
+    </footer>
+</body>
+</html>
